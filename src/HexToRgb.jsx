@@ -30,6 +30,11 @@ const HexToRgb = () => {
         setBgColor('#ffffff');
         document.body.style.backgroundColor = '#ffffff';
       }
+    } else if (input.length > 7 && input.startsWith('#')) {
+      setResult('Ошибка');
+      setIsError(true);
+      setBgColor('#ffffff');
+      document.body.style.backgroundColor = '#ffffff';
     } else {
       setResult('');
       setIsError(false);
